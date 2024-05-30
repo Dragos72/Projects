@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Expenses Tracker</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"></script>
+    </head>
+    
+    <body id="body">
+        <div id="Back_Btn">
+            <image src="back-blue-button.jpg" height ="50px" width="50px" id="Back_Btn"></image>
+        </div>
+        <div id="Balance">0 €</div>
+
+        
+
+        <div class="Amount_div" id="Add_Money">
+            <input type="text" list="selection_box" id="Expense_Bar" placeholder="Others">
+            <datalist id="selection_box">
+                <option value="Groceries">Groceries</option>
+                <option value="Rent">Rent</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Others">Others</option>
+            </datalist>
+            
+            <h2 id="Not_Enough_Balance">Not Enough Balance</h2>
+            <h2 id="Not_Valid_Input_Amount">Insert a number:</h2>
+            <h2 id="Not_Valid_Input_Type">Select expense type:</h2>
+            <input type="number" id="Amount" placeholder="€10">
+            <button type="submit" id="Submit_Plus">Add Money</button>
+            <button type="submit" id="Submit_Minus">Substract Money</button>
+        </div>
+
+        <div id="Display_Bar_Container"></div>
+
+        
+        <div id = "Chart_Board" >
+            <canvas id = "Expenses_Chart"></canvas>
+        </div>
+
+        <div id ="Savings_Div">
+            <h2 id ="No_recent_Expenses_Text">No Recent Expenses &#129395;</h2>
+            <image src="savings.jpg" id ="Savings_Image"></image>
+        </div>
+
+        <div id = "Switch_Interval_Div">
+            <button id = "Switch_Interval_Btn">Monthly</button>
+        </div>
+
+        
+
+        
+
+        <div id = "Plus_Minus_Btn_Container" height = "50px" width = "1250px">
+            <div id="Plus_Button">
+                <button class="Balance_Btn" id="Add_Balance">+</button>
+                <p>Add Money</p>
+            </div>
+            
+            <div id="Minus_Button">
+                <button class="Balance_Btn" id="Select_Expense">−</button>
+                <p>Select Expense</p>
+            </div>
+        </div>
+        
+        <script src="Expense_Tracker.js"></script>
+    </body>
+</html>
