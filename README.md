@@ -13,3 +13,6 @@ A car that can be controlled via Bluetooth
 4. Expense Tracker
 
 A website that will track your expenses and create graphs accordingly
+
+
+More details about each project in their directory readme.
