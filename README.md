@@ -1,4 +1,4 @@
-1. Product Detection ML - Still in progress
+1. Product Detection ML
 
 A ml model that searches for Products in a Furniture store URLs database
 
